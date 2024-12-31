@@ -1,0 +1,5 @@
+package com.bean.annotation;
+
+public class Employee {
+
+}

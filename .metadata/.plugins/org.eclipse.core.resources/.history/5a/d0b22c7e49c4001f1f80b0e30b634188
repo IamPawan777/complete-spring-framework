@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd ">
+ 	
+ 	 <!--  
+ 	<bean class="com.spring.Address" id="address">
+ 		<property name="city" value="Mumbai"/>
+ 		<property name="country" value="India"></property>
+ 	</bean> 	
+ 	<bean class="com.spring.Employee" id="emp" autowire="byName">
+ 		<property name="emp_name" value="Krishna"/>
+ 	</bean>
+ 	-->
+ 	 
+ 	  <!--
+ 	 <bean class="com.spring.Address" id="ad">
+ 		<property name="city" value="Delhi"/>
+ 		<property name="country" value="India"></property>
+ 	</bean> 
+ 	<bean class="com.spring.Employee" id="emp" autowire="byType">
+ 		<property name="emp_name" value="Radha"/>
+ 	</bean>
+ 	 -->
+ 	 
+ 	 
+ 	 <!--
+ 	 <bean class="com.spring.Address" id="ad">
+ 		<property name="city" value="Mumbai"/>
+ 		<property name="country" value="India"></property>
+ 	</bean> 	 
+ 	 <bean class="com.spring.Employee" id="emp" autowire="constructor">
+ 		<property name="emp_name" value="Radha"/>
+ 	</bean>
+ 	 -->
+ 	 
+ 	 
+ 	 
+ 	 <!--  using annotation -->
+ 	 <context:annotation-config/>
+ 	 
+ 	 <bean class="com.spring.annotation.Address" id="address">
+ 	 		<property name="city" value="Newyork"/>
+ 	 		<property name="country" value="USA"/>
+ 	 </bean>
+ 	 
+ 	 <bean class="com.spring.annotation.Employee" id="emp">
+ 	 		<property name="emp_name" value="Sam"/>
+ 	 </bean>
+ 	 
+ 	
+ </beans>

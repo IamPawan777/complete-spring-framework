@@ -1,0 +1,17 @@
+package com.bean.annotation;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class App3 {
+
+	public static void main(String[] args) {
+		AbstractApplicationContext app = new ClassPathXmlApplicationContext("com/bean/annotation/config.xml");
+		app.registerShutdownHook();
+		
+		Employee em = (Employee)app.getBean("emp");
+		System.out.println(em);
+	}
+
+}

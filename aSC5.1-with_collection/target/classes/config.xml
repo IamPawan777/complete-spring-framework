@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 	
+ 	
+ 	<!-- here set, map, list are not standalone -->
+ 	
+ 	<bean class="com.spring.Employee" id="emp">
+ 		<property name="emp_id" value="77" />
+ 		<property name="emp_name" value="Joker"/>
+ 		<property name="emp_phone">
+ 			<list>
+ 				<value>+91</value>
+ 				<value>+49</value>
+ 				<value>+12</value>
+ 				<value>+91</value>
+ 			</list>
+ 		</property>
+ 		
+ 		<property name="emp_salary">
+ 			<set>
+ 				<value>1000</value>
+ 				<value>899</value>
+ 			</set>
+ 		</property>
+ 		
+ 		<property name="emp_course">
+ 			<map>
+ 				<entry key="HTML" value="radha Maam" />
+ 				<entry key="JAVA" value="geeta mana"/>
+ 				<entry key=".Net" value="Seeta sir"/>
+ 			</map>
+ 		</property>
+ 		
+ 		<property name="emp_pro">
+ 			<props>
+ 				<prop key="abc" ></prop>
+ 				<prop key="xyz"></prop>
+ 			</props>
+ 		</property>
+ 		
+ 	</bean>
+ 	
+ </beans>

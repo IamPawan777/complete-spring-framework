@@ -1,0 +1,21 @@
+package com.spring;
+
+public class Servics {
+	Bulb bulb;
+	
+	public String ask(String name) {
+		if(name.equals("Havils"))
+			bulb = new Havils();
+		else
+			bulb = new Nippo();
+		return bulb.getBulb();
+	}
+
+	public Bulb getBulb() {
+		return bulb;
+	}
+
+	public void setBulb(Bulb bulb) {
+		this.bulb = bulb;
+	}
+}

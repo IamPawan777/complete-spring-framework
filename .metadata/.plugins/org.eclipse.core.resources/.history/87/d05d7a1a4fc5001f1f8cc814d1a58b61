@@ -1,0 +1,16 @@
+package com.example;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	AnnotationConfigApplicationContext app = new AnnotationConfigApplicationContext(AppConfig.class);
+    	Pawan pawan = app.getBean("p", Pawan.class);
+    	pawan.setId(171);
+    	pawan.setName("Radha Radha");
+    	
+    	System.out.println(pawan);
+    }
+}

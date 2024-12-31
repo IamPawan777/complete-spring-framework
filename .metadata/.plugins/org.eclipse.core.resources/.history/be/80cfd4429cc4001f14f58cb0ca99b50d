@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ 	https://www.springframework.org/schema/beans/spring-beans.xsd
+ 	http://www.springframework.org/schema/util
+ 	https://www.springframework.org/schema/util/spring-util.xsd">
+
+
+	<!-- standalone list -->
+	
+	<util:list list-class="java.util.LinkedList" id="myfrnd">
+		<value>Harry</value>
+		<value>Komal</value>
+		<value>Naman</value>
+		<value>Pawan</value>
+	</util:list>
+	
+	
+	
+	<!-- standalone map -->
+	
+	<util:map map-class="java.util.TreeMap" id="feeStruct">
+		<entry key="Hindi" value="1200"/>
+		<entry key="English" value="999"/>
+		<entry key="Sanskrit" value="10"/>
+	</util:map>
+	
+	
+	<!-- standalone properties -->
+	<util:properties id="db_config">
+		<prop key="driver">com.mysqk.JDBC.Driver</prop>
+		<prop key="url">mysql:jdbc://localhoat:3306/MyDB</prop>
+		<prop key="user">root</prop>
+		<prop key="pass">IamPawan</prop>
+	</util:properties>
+	
+	<bean class="com.spring.Student" id="std">
+		<property name="friend" ref="myfrnd"/>
+		<property name="fees" ref="feeStruct"/>
+		<property name="pro" ref="db_config"/>
+	</bean>
+
+
+</beans>

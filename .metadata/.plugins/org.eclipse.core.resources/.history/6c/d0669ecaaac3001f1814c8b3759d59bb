@@ -1,0 +1,16 @@
+package com.bean.interfac;
+
+public class Student {
+	private int number;
+
+	public Student(int number) {
+		super();
+		this.number = number;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [number=" + number + "]";
+	}
+	
+}

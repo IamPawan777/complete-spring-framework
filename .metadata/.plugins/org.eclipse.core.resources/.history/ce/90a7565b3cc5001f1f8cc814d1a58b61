@@ -1,0 +1,25 @@
+package com.example;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Pawan {
+	
+	@Value("#{10+5}")
+	private int sum;
+	
+	@Value("#{10-2}")
+	private int sub;
+	
+	@Value("#{5*5}")
+	private int mul;
+	
+	@Value("#{2/2}")
+	private int div;
+
+	@Override
+	public String toString() {
+		return "[sum=" + sum + ", sub=" + sub + ", mul=" + mul + ", div=" + div + "]";
+	}
+}

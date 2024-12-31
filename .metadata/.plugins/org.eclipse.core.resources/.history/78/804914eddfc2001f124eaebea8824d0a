@@ -1,0 +1,31 @@
+package com.spring;
+
+public class Student {
+	private int id;
+	private String name;
+	private String course;
+	
+	public Student(int id, String name) {
+		this.id = id;
+		this.name = name;
+		System.out.println("int | string");
+	}
+	
+	public Student(String name, int id) {
+		this.name = name;
+		this.id = id;
+		System.out.println("String | int");
+	}
+	
+	public Student(String name, String course) {
+		this.name = name;
+		this.course = course;
+		System.out.println("String | string");
+	}
+
+	@Override
+	public String toString() {
+		return "Student : id is= " + id + " || name is= " + name;
+	}
+	
+}
