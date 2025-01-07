@@ -29,27 +29,27 @@ public class StudentDao implements StudentDaoInterface {
 		return (Integer) this.hibernateTemplate.save(std);
 	}
 
-	// get one
+	// get one........
 	@Override
 	public Student getStd(int id) {
 		Student st = this.hibernateTemplate.get(Student.class, id);
 		return st;
 	}
 
-	// get all
+	// get all......
 	@Override
 	public List<Student> getAllStd() {
 		List<Student> list = this.hibernateTemplate.loadAll(Student.class);
 		return list;
 	}
 
-	// update
+	// update..........
 	@Transactional
 	public void updateStd(Student std) {
 		this.hibernateTemplate.update(std);
 	}
 
-	// delete
+	// delete.........
 	@Transactional
 	public void deleteStd(int id) {
 		Student st = this.hibernateTemplate.get(Student.class, id);
