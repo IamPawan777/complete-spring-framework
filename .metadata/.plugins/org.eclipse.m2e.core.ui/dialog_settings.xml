@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Language\Advance Java\spring\bSJD3-CRUD_standerd\src\main\java\com\spring\App.java"/>
+			<item value="C:\Language\Advance Java\spring\cSOR1-first\src\main\resources\config.xml"/>
 			<item value="C:\Language\Advance Java\spring\p1-first_demo\src\main\resources\applicationContext.xml"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,17 +28,14 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.example"/>
-			<item value="com.spring"/>
+			<item value="com.orm"/>
 		</list>
 		<list key="groupId">
-			<item value="com.example"/>
-			<item value="com.spring"/>
+			<item value="com.orm"/>
 		</list>
 		<list key="artifactId">
-			<item value="p9-sterotype-annotation"/>
-			<item value="p2-second_demo"/>
-			<item value="p1-first_demo"/>
+			<item value="cSOR3-CRUD_javaConfig"/>
+			<item value="cSOR2-CRUD"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
